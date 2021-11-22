@@ -1,0 +1,59 @@
+# -*- Mode: python; py-indent-offset: 4; indent-tabs-mode: nil; coding: utf-8; -*-
+#
+# Copyright (c) 2021 Robert Bosch GmbH.
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License version 3 as
+# published by the Free Software Foundation;
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+
+def build(bld):
+    module = bld.create_ns3_module('incINC', ['core','ndnSIM'])
+    module.source = [
+
+        'model/inc_orchestration_compute_node.cc',
+        'helper/ndn-inc-helper.cc',
+        'utils/topology/inc_ndn_annotated_topology_reader.cpp',
+        'apps/orchestration-compute-app.cpp',
+        'apps/inc-compute-app.cpp',
+        'apps/inc_functions/INC-Computation.cpp',
+        'apps/inc_orchestration/inc_udp_orchestration_client_app_node_info.cpp',
+        'apps/inc_orchestration/inc_udp_orchestration_server_app_node_info.cpp',
+        'apps/inc_orchestration/orchestrator-consumer.cpp',
+        'apps/inc_orchestration/orchestrator-provider.cpp',
+        'apps/inc_orchestration/test-server.cpp',
+        'apps/inc_orchestration/udp-orchestration-helper-node-info.cpp',
+
+        ]
+
+    module_test = bld.create_ns3_module_test_library('incINC')
+    module_test.source = [
+        'test/ndn-inc-test-suite.cc',
+        ]
+
+    headers = bld(features='ns3header')
+    headers.module = 'incINC'
+    headers.source = [
+        'model/inc_orchestration_compute_node.h',
+        'helper/ndn-inc-helper.h',
+        'utils/topology/inc_ndn_annotated_topology_reader.hpp',
+        'apps/orchestration-compute-app.hpp',
+        'apps/inc-compute-app.hpp',
+        'apps/inc_functions/INC-Computation.hpp',
+        'apps/inc_orchestration/inc_udp_orchestration_client_app_node_info.hpp',
+        'apps/inc_orchestration/inc_udp_orchestration_server_app_node_info.hpp',
+        'apps/inc_orchestration/orchestrator-consumer.hpp',
+        'apps/inc_orchestration/orchestrator-provider.hpp',
+        'apps/inc_orchestration/test-server.hpp',
+        'apps/inc_orchestration/udp-orchestration-helper-node-info.hpp',
+        ]
+
+    if bld.env.ENABLE_EXAMPLES:
+        bld.recurse('examples')
+
+    # bld.ns3_python_bindings()

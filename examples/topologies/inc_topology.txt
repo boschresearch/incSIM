@@ -1,0 +1,278 @@
+router
+orchestrator	2	25	8	1000M	64	2000	l1,l2,l3	docker,python,java
+compute_node_1	1	0	2	850M	16	128	l2,l3	docker,python,java
+compute_node_2	1	5	10	450M	32	256	l2,l3	docker,python,java
+compute_node_3	1	10	6	450M	8	128	l2,l3	docker,python,java
+compute_node_4	1	15	4	450M	64	1000	l2,l3	docker,python,java
+compute_node_5	1	20	1	200M	32	16	l2,l3	docker,python,java
+compute_node_6	1	25	10	600M	16	500	l2,l3	docker,python,java
+compute_node_7	1	30	4	600M	8	128	l2,l3	docker,python,java
+compute_node_8	1	35	2	450M	64	64	l2,l3	docker,python,java
+compute_node_9	1	40	1	200M	64	2000	l2,l3	docker,python,java
+consumer_0	-1	-2	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_1	-1	-1	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_2	-1	0	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_3	-1	1	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_4	-1	2	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_5	-1	3	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_6	-1	4	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_7	-1	5	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_8	-1	6	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_9	-1	7	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_10	-1	8	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_11	-1	9	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_12	-1	10	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_13	-1	11	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_14	-1	12	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_15	-1	13	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_16	-1	14	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_17	-1	15	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_18	-1	16	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_19	-1	17	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_20	-1	18	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_21	-1	19	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_22	-1	20	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_23	-1	21	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_24	-1	22	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_25	-1	23	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_26	-1	24	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_27	-1	25	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_28	-1	26	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_29	-1	27	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_30	-1	28	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_31	-1	29	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_32	-1	30	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_33	-1	31	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_34	-1	32	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_35	-1	33	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_36	-1	34	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_37	-1	35	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_38	-1	36	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_39	-1	37	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_40	-1	38	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_41	-1	39	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_42	-1	40	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_43	-1	41	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_44	-1	42	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_45	-1	43	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_46	-1	44	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_47	-1	45	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_48	-1	46	NaN	NaN	NaN	NaN	NaN	NaN
+consumer_49	-1	47	NaN	NaN	NaN	NaN	NaN	NaN
+
+links
+orchestrator	compute_node_1	100Mbps	1	10ms	20
+orchestrator	compute_node_2	100Mbps	1	10ms	20
+orchestrator	compute_node_3	100Mbps	1	10ms	20
+orchestrator	compute_node_4	100Mbps	1	10ms	20
+orchestrator	compute_node_5	100Mbps	1	10ms	20
+orchestrator	compute_node_6	100Mbps	1	10ms	20
+orchestrator	compute_node_7	100Mbps	1	10ms	20
+orchestrator	compute_node_8	100Mbps	1	10ms	20
+orchestrator	compute_node_9	100Mbps	1	10ms	20
+compute_node_1	consumer_0	10Mbps	10	10ms	20
+compute_node_1	consumer_1	10Mbps	10	10ms	20
+compute_node_1	consumer_2	10Mbps	10	10ms	20
+compute_node_1	consumer_3	10Mbps	10	10ms	20
+compute_node_1	consumer_4	10Mbps	10	10ms	20
+compute_node_2	consumer_5	10Mbps	10	10ms	20
+compute_node_2	consumer_6	10Mbps	10	10ms	20
+compute_node_2	consumer_7	10Mbps	10	10ms	20
+compute_node_2	consumer_8	10Mbps	10	10ms	20
+compute_node_2	consumer_9	10Mbps	10	10ms	20
+compute_node_3	consumer_10	10Mbps	10	10ms	20
+compute_node_3	consumer_11	10Mbps	10	10ms	20
+compute_node_3	consumer_12	10Mbps	10	10ms	20
+compute_node_3	consumer_13	10Mbps	10	10ms	20
+compute_node_3	consumer_14	10Mbps	10	10ms	20
+compute_node_4	consumer_15	10Mbps	10	10ms	20
+compute_node_4	consumer_16	10Mbps	10	10ms	20
+compute_node_4	consumer_17	10Mbps	10	10ms	20
+compute_node_4	consumer_18	10Mbps	10	10ms	20
+compute_node_4	consumer_19	10Mbps	10	10ms	20
+compute_node_5	consumer_20	10Mbps	10	10ms	20
+compute_node_5	consumer_21	10Mbps	10	10ms	20
+compute_node_5	consumer_22	10Mbps	10	10ms	20
+compute_node_5	consumer_23	10Mbps	10	10ms	20
+compute_node_5	consumer_24	10Mbps	10	10ms	20
+compute_node_6	consumer_25	10Mbps	10	10ms	20
+compute_node_6	consumer_26	10Mbps	10	10ms	20
+compute_node_6	consumer_27	10Mbps	10	10ms	20
+compute_node_6	consumer_28	10Mbps	10	10ms	20
+compute_node_6	consumer_29	10Mbps	10	10ms	20
+compute_node_7	consumer_30	10Mbps	10	10ms	20
+compute_node_7	consumer_31	10Mbps	10	10ms	20
+compute_node_7	consumer_32	10Mbps	10	10ms	20
+compute_node_7	consumer_33	10Mbps	10	10ms	20
+compute_node_7	consumer_34	10Mbps	10	10ms	20
+compute_node_8	consumer_35	10Mbps	10	10ms	20
+compute_node_8	consumer_36	10Mbps	10	10ms	20
+compute_node_8	consumer_37	10Mbps	10	10ms	20
+compute_node_8	consumer_38	10Mbps	10	10ms	20
+compute_node_8	consumer_39	10Mbps	10	10ms	20
+compute_node_9	consumer_40	10Mbps	10	10ms	20
+compute_node_9	consumer_41	10Mbps	10	10ms	20
+compute_node_9	consumer_42	10Mbps	10	10ms	20
+compute_node_9	consumer_43	10Mbps	10	10ms	20
+compute_node_9	consumer_44	10Mbps	10	10ms	20
+compute_node_1	consumer_45	10Mbps	10	10ms	20
+compute_node_2	consumer_46	10Mbps	10	10ms	20
+compute_node_3	consumer_47	10Mbps	10	10ms	20
+compute_node_4	consumer_48	10Mbps	10	10ms	20
+compute_node_5	consumer_49	10Mbps	10	10ms	20
+
+functions
+func-0	Operand_4;	docker	4	32	1	4.0
+func-1	Operand_4;Operand_3;Operand_5;	docker	4	32	1	3.0
+func-2	null;	docker	4	16	1	1.0
+func-3	Operand_2;	docker	2	16	1	1.0
+func-4	null;	docker	2	16	2	2.0
+func-5	Operand_0;Operand_5;Operand_4;	docker	2	32	1	4.0
+func-6	Operand_2;Operand_3;Operand_4;	docker	2	16	1	4.0
+func-7	Operand_3;	docker	4	16	1	3.0
+func-8	Operand_2;	docker	4	16	2	2.0
+func-9	Operand_2;Operand_5;Operand_4;	docker	2	32	2	4.0
+func-10	Operand_1;	docker	4	32	1	4.0
+func-11	Operand_0;	docker	4	16	2	2.0
+func-12	Operand_0;Operand_3;Operand_2;	docker	2	32	1	1.0
+func-13	Operand_2;Operand_3;Operand_1;	docker	2	16	1	3.0
+func-14	null;	docker	4	16	2	3.0
+func-15	null;	docker	2	16	1	1.0
+func-16	Operand_2;Operand_0;	docker	2	32	2	3.0
+func-17	Operand_5;Operand_2;Operand_1;	docker	4	16	1	3.0
+func-18	null;	docker	4	16	1	1.0
+func-19	null;	docker	2	32	2	4.0
+func-20	null;	docker	2	16	2	3.0
+func-21	null;	docker	2	32	2	2.0
+func-22	Operand_4;Operand_0;Operand_5;	docker	2	16	2	1.0
+func-23	Operand_4;Operand_2;Operand_5;	docker	2	32	1	2.0
+func-24	Operand_5;	docker	4	32	2	1.0
+func-25	Operand_3;Operand_0;	docker	4	32	1	3.0
+func-26	null;	docker	4	16	1	3.0
+func-27	null;	docker	2	16	2	3.0
+func-28	Operand_2;	docker	2	16	2	1.0
+func-29	Operand_1;Operand_3;	docker	2	16	1	1.0
+func-30	Operand_4;	docker	2	32	1	4.0
+func-31	Operand_4;Operand_3;Operand_1;	docker	4	32	1	3.0
+func-32	Operand_5;	docker	2	32	1	1.0
+func-33	Operand_5;	docker	4	16	1	1.0
+func-34	Operand_1;	docker	4	32	1	4.0
+func-35	Operand_4;Operand_5;Operand_3;	docker	4	32	2	2.0
+func-36	Operand_5;Operand_4;	docker	2	16	2	1.0
+func-37	Operand_5;Operand_2;Operand_4;	docker	2	32	1	2.0
+func-38	Operand_2;Operand_5;Operand_3;	docker	4	16	1	3.0
+func-39	Operand_0;Operand_4;Operand_5;	docker	4	16	1	1.0
+func-40	null;	docker	4	16	1	1.0
+func-41	Operand_0;	docker	2	16	2	4.0
+func-42	Operand_2;Operand_1;Operand_3;	docker	4	32	1	1.0
+func-43	Operand_5;	docker	4	16	2	4.0
+func-44	Operand_4;Operand_2;Operand_1;	docker	2	32	2	4.0
+func-45	Operand_1;Operand_4;	docker	2	32	1	4.0
+func-46	Operand_4;Operand_0;	docker	4	16	2	2.0
+func-47	Operand_5;Operand_2;	docker	2	32	2	4.0
+func-48	Operand_3;Operand_5;Operand_1;	docker	4	32	1	3.0
+func-49	Operand_4;Operand_5;Operand_0;	docker	4	32	2	4.0
+
+initial function status
+compute_node_8	func-0
+compute_node_4	func-1
+compute_node_9	func-2
+compute_node_3	func-3
+compute_node_4	func-4
+compute_node_7	func-5
+compute_node_2	func-6
+compute_node_4	func-7
+compute_node_3	func-8
+compute_node_7	func-9
+compute_node_7	func-10
+compute_node_6	func-11
+compute_node_3	func-12
+compute_node_9	func-13
+compute_node_1	func-14
+compute_node_4	func-15
+compute_node_1	func-16
+compute_node_1	func-17
+compute_node_6	func-18
+compute_node_4	func-19
+compute_node_4	func-20
+compute_node_7	func-21
+compute_node_7	func-22
+compute_node_9	func-23
+compute_node_4	func-24
+compute_node_6	func-25
+compute_node_7	func-26
+compute_node_7	func-27
+compute_node_5	func-28
+compute_node_2	func-29
+compute_node_3	func-30
+compute_node_3	func-31
+compute_node_3	func-32
+compute_node_1	func-33
+compute_node_6	func-34
+compute_node_6	func-35
+compute_node_5	func-36
+compute_node_5	func-37
+compute_node_7	func-38
+compute_node_7	func-39
+compute_node_1	func-40
+compute_node_5	func-41
+compute_node_3	func-42
+compute_node_1	func-43
+compute_node_2	func-44
+compute_node_1	func-45
+compute_node_2	func-46
+compute_node_3	func-47
+compute_node_2	func-48
+compute_node_7	func-49
+
+consumer section
+consumer_0	func-0	Operand_4;	4	Operand_4;
+consumer_1	func-1	Operand_4;Operand_3;Operand_5;	5	Operand_2;
+consumer_2	func-2	null;	6	Operand_5;
+consumer_3	func-3	Operand_2;	4	Operand_2;
+consumer_4	func-4	null;	4	Operand_0;
+consumer_5	func-5	Operand_0;Operand_5;Operand_4;	6	Operand_5;
+consumer_6	func-6	Operand_2;Operand_3;Operand_4;	4	Operand_3;
+consumer_7	func-7	Operand_3;	5	Operand_4;
+consumer_8	func-8	Operand_2;	3	Operand_2;
+consumer_9	func-9	Operand_2;Operand_5;Operand_4;	6	Operand_4;
+consumer_10	func-10	Operand_1;	6	Operand_4;
+consumer_11	func-11	Operand_0;	3	Operand_5;
+consumer_12	func-12	Operand_0;Operand_3;Operand_2;	4	Operand_4;
+consumer_13	func-13	Operand_2;Operand_3;Operand_1;	3	Operand_3;
+consumer_14	func-14	null;	3	Operand_1;
+consumer_15	func-15	null;	6	Operand_1;
+consumer_16	func-16	Operand_2;Operand_0;	6	Operand_0;
+consumer_17	func-17	Operand_5;Operand_2;Operand_1;	4	Operand_4;
+consumer_18	func-18	null;	5	Operand_5;
+consumer_19	func-19	null;	5	Operand_0;
+consumer_20	func-20	null;	3	Operand_2;
+consumer_21	func-21	null;	3	Operand_4;
+consumer_22	func-22	Operand_4;Operand_0;Operand_5;	5	Operand_0;
+consumer_23	func-23	Operand_4;Operand_2;Operand_5;	3	Operand_0;
+consumer_24	func-24	Operand_5;	3	Operand_5;
+consumer_25	func-25	Operand_3;Operand_0;	4	Operand_2;
+consumer_26	func-26	null;	4	Operand_4;
+consumer_27	func-27	null;	4	Operand_0;
+consumer_28	func-28	Operand_2;	3	Operand_2;
+consumer_29	func-29	Operand_1;Operand_3;	3	Operand_2;
+consumer_30	func-30	Operand_4;	6	Operand_3;
+consumer_31	func-31	Operand_4;Operand_3;Operand_1;	5	Operand_0;
+consumer_32	func-32	Operand_5;	6	Operand_2;
+consumer_33	func-33	Operand_5;	5	Operand_0;
+consumer_34	func-34	Operand_1;	6	Operand_0;
+consumer_35	func-35	Operand_4;Operand_5;Operand_3;	3	Operand_2;
+consumer_36	func-36	Operand_5;Operand_4;	4	Operand_5;
+consumer_37	func-37	Operand_5;Operand_2;Operand_4;	3	Operand_3;
+consumer_38	func-38	Operand_2;Operand_5;Operand_3;	5	Operand_4;
+consumer_39	func-39	Operand_0;Operand_4;Operand_5;	4	Operand_2;
+consumer_40	func-40	null;	6	Operand_5;
+consumer_41	func-41	Operand_0;	5	Operand_3;
+consumer_42	func-42	Operand_2;Operand_1;Operand_3;	5	Operand_5;
+consumer_43	func-43	Operand_5;	4	Operand_3;
+consumer_44	func-44	Operand_4;Operand_2;Operand_1;	5	Operand_4;
+consumer_45	func-45	Operand_1;Operand_4;	5	Operand_1;
+consumer_46	func-46	Operand_4;Operand_0;	3	Operand_2;
+consumer_47	func-47	Operand_5;Operand_2;	4	Operand_4;
+consumer_48	func-48	Operand_3;Operand_5;Operand_1;	6	Operand_3;
+consumer_49	func-49	Operand_4;Operand_5;Operand_0;	6	Operand_1;
